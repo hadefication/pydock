@@ -1,0 +1,8 @@
+{
+  "name": "pydock",
+  "version": "1.0.0",
+  "main": "manage.py",
+  "repository": "git@github.com:hadefication/pydock.git",
+  "author": "Glen  Bangkila <hadeinvane@gmail.com>",
+  "license": "MIT"
+}
