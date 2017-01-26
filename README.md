@@ -1,2 +1,2 @@
-# pydock
-Just another python stuff using Docker.
+# Pydock
+Just another python django stuff using Docker.
