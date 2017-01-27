@@ -6,7 +6,10 @@ init:
 project:
 	docker-compose run web django-admin.py startproject src .
 app:
-	docker exec pyweb python manage.py startapp $(name)
+	docker exec pyweb mkdir /code/apps/$(name)
+	docker exec pyweb python manage.py startapp $(name) /code/apps/$(name)
+	cp ./stubs/urls.py ./apps/$(name)
+	cp ./stubs/views.py ./apps/$(name)
 start:
 	docker-compose up
 stop:
