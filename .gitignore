@@ -1,5 +1,6 @@
 /node_modules
 /apps/*
 !/apps/.gitkeep
+!/apps/__init__.py
 /src
 manage.py

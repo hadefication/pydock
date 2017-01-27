@@ -11,11 +11,13 @@ app:
 	cp ./stubs/urls.py ./apps/$(name)
 	cp ./stubs/views.py ./apps/$(name)
 start:
-	docker-compose up
+	docker-compose start
 stop:
-	docker-compose down
+	docker-compose stop
 connect:
 	docker exec -it pyweb bash
+migrate:
+	docker exec pyweb python manage.py migrate
 reset:
 	rm -rf src
 	rm manage.py
